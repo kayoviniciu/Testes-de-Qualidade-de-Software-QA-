@@ -1,0 +1,53 @@
+1: Plano de Teste: é um documento que organiza como os testes de um sistema serão realizados. Ele define os objetivos,
+o que será testado, os recursos necessários e os critérios para considerar os testes aprovados.
+
+2: Caso de Teste: é um conjunto de instruções que descreve como testar uma funcionalidade específica, indicando os passos,
+os dados utilizados e o resultado esperado.
+
+
+Qual a diferença entre Teste de Caixa Preta e Teste de Caixa Branca?
+
+1: Teste de Caixa Preta: verifica se o sistema funciona corretamente a
+partir das entradas e saídas, sem precisar conhecer o código interno.
+
+2: Teste de Caixa Branca: verifica a estrutura interna do código, analisando a lógica, as condições e os caminhos de execução.
+
+
+==================================
+TESTES
+==================================
+
+CT02 — Validação de números negativos
+
+Objetivo: Verificar se o sistema impede o registro de valores negativos.
+
+Digitar -2 no campo Gols.
+Digitar 1 no campo Assistências.
+Clicar em “Salvar Atuação”.
+
+Resultado esperado: O sistema deve impedir o registro de números negativos e exibir uma mensagem de validação,
+sem calcular a pontuação.
+
+===================================
+CT03 — Validação de campos vazios
+
+Objetivo: Verificar se o sistema trata campos sem valores preenchidos.
+
+Apagar o valor do campo Gols.
+Digitar 1 no campo Assistências.
+Clicar em “Salvar Atuação”.
+
+Resultado esperado: O sistema deve solicitar o preenchimento correto do campo Gols e não deve exibir uma pontuação inválida.
+====================================
+
+CT04 — Validação de valores extremos
+
+Objetivo: Verificar se o sistema trata números muito altos sem apresentar resultados inesperados.
+
+Digitar 999 no campo Gols.
+Digitar 999 no campo Assistências.
+Clicar em “Salvar Atuação”
+
+Resultado esperado: O sistema deve validar se os valores estão dentro de um limite aceitável e,
+ caso ultrapassem esse limite, informar o usuário sem registrar a pontuação.
+=================================
